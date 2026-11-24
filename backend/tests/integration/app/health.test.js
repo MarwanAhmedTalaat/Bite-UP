@@ -1,12 +1,5 @@
 
 const request = require('supertest');
-
-jest.mock('mongoose', () => ({
-    connection: {
-        readyState: 0
-    }
-}));
-
 const mongoose = require('mongoose');
 const app = require('../../../src/app');
 
